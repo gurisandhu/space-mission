@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+.logo {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 18px;
+}
+// header
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	align-items: start;
+	padding: 35px 20px;
+}
+
+@media only screen and (max-width: $xlarge) {
+	header {
+		padding: 25px;
+	}
+}
+@media only screen and (max-width: $large) {
+	header {
+		padding: 20px;
+	}
+}
+// @media only screen and (max-width: $medium) {
+//
+// }
+// @media only screen and (max-width: $small) {
+//
+// }

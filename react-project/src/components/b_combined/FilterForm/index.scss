@@ -1,0 +1,97 @@
+@import '../../../variables.scss';
+.filterForm {
+	background-color: #f9fafa;
+	width: 100%;
+	display: flex;
+	padding: 16px 30px 25px;
+	justify-content: space-between;
+	border-bottom: 1px solid #d5d9de;
+
+	& > div {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+		&:nth-child(1) {
+			width: 25.5%;
+			padding-right: 3%;
+		}
+		&:nth-child(2) {
+			width: 25.5%;
+			padding-right: 3%;
+		}
+		&:nth-child(3) {
+			width: 18.7%;
+			padding-right: 2%;
+		}
+		&:nth-child(4) {
+			width: 18.7%;
+			padding-right: 2%;
+		}
+		&:nth-child(5) {
+			width: 13.8%;
+		}
+	}
+}
+
+@media only screen and (max-width: $xlarge) {
+	//
+}
+@media only screen and (max-width: $large) {
+	.filterForm {
+		padding-top: 0;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		& > div {
+			padding-top: 20px;
+			&:nth-child(1) {
+				width: 48.5%;
+				padding-right: 0;
+			}
+			&:nth-child(2) {
+				width: 48.5%;
+				padding-right: 0;
+			}
+			&:nth-child(3) {
+				width: 31%;
+				padding-right: 0;
+			}
+			&:nth-child(4) {
+				width: 31%;
+				padding-right: 0;
+			}
+			&:nth-child(5) {
+				width: 31%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: $medium) {
+	.filterForm {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		& > div {
+			&:nth-child(1) {
+				width: 100%;
+				padding-right: 0;
+			}
+			&:nth-child(2) {
+				width: 100%;
+				padding-right: 0;
+			}
+			&:nth-child(3) {
+				width: 49%;
+				padding-right: 2%;
+			}
+			&:nth-child(4) {
+				width: 49%;
+				padding-right: 0;
+			}
+			&:nth-child(5) {
+				width: 100%;
+			}
+		}
+	}
+}
+@media only screen and (max-width: $small) {
+}

@@ -1,0 +1,11 @@
+export const LOADING = 'LOADING';
+export const GET_LAUNCHES = 'GET_LAUNCHES';
+export const GET_LAUNCH_PADS = 'GET_LAUNCH_PADS';
+export const GET_MIN_YEARS = 'GET_MIN_YEARS';
+export const GET_MAX_YEARS = 'GET_MAX_YEARS';
+export const VALIDATE_YEARS = 'VALIDATE_YEARS';
+export const SEARCH_FILTERS = 'SEARCH_FILTERS';
+export const KEYWORDS = 'KEYWORDS';
+export const LAUNCH_PAD = 'LAUNCH_PAD';
+export const MIN_YEAR = 'MIN_YEAR';
+export const MAX_YEAR = 'MAX_YEAR';

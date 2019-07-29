@@ -1,0 +1,110 @@
+@import '../../../variables.scss';
+.Item {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #f0f2f4;
+	&:last-child {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	.Image {
+		width: 11%;
+		padding-right: 3%;
+	}
+}
+.itemContent {
+	width: 89%;
+}
+.listTwo {
+	display: flex;
+	flex-wrap: wrap;
+	a {
+		margin-right: 1.5%;
+		margin-top: 23px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.subContent {
+	display: flex;
+	> div {
+		&:nth-child(1) {
+			padding-right: 25px;
+			width: 85%;
+		}
+		&:nth-child(2) {
+			width: 15%;
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: $xlarge) {
+	.Item {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		.Image {
+			width: 20%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		a {
+			margin-right: 1%;
+			margin-top: 15px;
+		}
+	}
+
+	.itemContent {
+		width: 77%;
+	}
+}
+@media only screen and (max-width: $large) {
+	.Item {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+@media only screen and (max-width: $medium) {
+	.Item {
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		.Image {
+			width: 20%;
+			display: flex;
+			align-items: left;
+			justify-content: left;
+		}
+	}
+	.flightNumber {
+		position: absolute;
+		width: 95px !important;
+		top: 40px;
+		right: 0;
+	}
+
+	.itemContent {
+		width: 100%;
+		margin-top: 10px;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.listTwo {
+		justify-content: center;
+		margin-top: 28px;
+	}
+}
+@media only screen and (max-width: $small) {
+	.itemContent {
+		padding-top: 15px;
+	}
+	.listTwo {
+		margin-top: 15px;
+	}
+}
