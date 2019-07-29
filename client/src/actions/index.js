@@ -54,7 +54,7 @@ export const getYears = state => dispatch => {
 export const getLaunches = () => async dispatch => {
 	try {
 		dispatch(setLoading());
-		const launches = await fetch('http://localhost:8001/launches');
+		const launches = await fetch('/launches');
 		const launchesData = await launches.json();
 		dispatch({ type: GET_LAUNCHES, payload: launchesData });
 		dispatch(getYears(launchesData));
@@ -67,7 +67,7 @@ export const getLaunches = () => async dispatch => {
 export const getLaunchPads = () => async dispatch => {
 	try {
 		dispatch(setLoading());
-		const launchPads = await fetch('http://localhost:8001/launchpads');
+		const launchPads = await fetch('/launchpads');
 		const launchPadsData = await launchPads.json();
 		dispatch({ type: GET_LAUNCH_PADS, payload: launchPadsData });
 	} catch (e) {

@@ -5,8 +5,8 @@
 	"main": "server.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node server.js",
-		"server": "node server.js",
+		"start": "nodemon server.js",
+		"server": "nodemon server.js",
 		"client": "npm start --prefix client",
 		"clientInstall": "npm install --prefix client",
 		"dev": "concurrently \"npm run server\" \"npm run client\""
@@ -15,6 +15,8 @@
 	"license": "ISC",
 	"dependencies": {
 		"concurrently": "^4.1.1",
-		"hapi": "^16.6.2"
+		"express": "^4.17.1",
+		"hapi": "^16.6.2",
+		"nodemon": "^1.19.1"
 	}
 }
